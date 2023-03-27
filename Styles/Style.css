@@ -1,0 +1,145 @@
+:root {
+  font-size: 62.5% !important;
+}
+
+* {
+  font-size: 1.5rem;
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  color: hsl(234, 12%, 34%);
+}
+
+.centralize {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.centralize-column {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.self-centralize {
+  align-self: center;
+  justify-self: center;
+}
+
+.mobile-content {
+  display: none;
+}
+
+.desktop-content {
+  display: inline-block;
+}
+
+@media all and (max-width: 376px) {
+  .mobile-centralize {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+  }
+  .mobile-centralize-column {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .mobile-content {
+    display: inline-block !important;
+  }
+  .desktop-content {
+    display: none !important;
+  }
+}
+body {
+  background-color: hsl(0, 0%, 98%);
+}
+body p {
+  color: hsl(229, 6%, 66%);
+  font-weight: 200;
+  font-size: 1.3rem;
+}
+
+.main-section {
+  margin-top: 3%;
+  width: 78%;
+}
+.main-section .description-container h2 {
+  font-size: 3rem;
+  font-weight: 200;
+}
+.main-section .description-container h2 strong {
+  font-weight: 600;
+  font-size: 3rem;
+}
+.main-section .description-container p {
+  text-align: center;
+  width: 60%;
+  margin-top: 1.5rem;
+}
+.main-section .card-container {
+  display: grid;
+  grid-auto-flow: column;
+  -moz-column-gap: 5%;
+       column-gap: 5%;
+  margin-top: 4rem;
+  width: 100%;
+}
+.main-section .card-container .cards {
+  background-color: white;
+  padding: 2rem 3.5rem;
+  border-radius: 1rem;
+  position: relative;
+  width: 35rem;
+  height: 20rem;
+  box-shadow: 0px 5px 10px hsl(229, 6%, 66%);
+}
+.main-section .card-container .cards img {
+  position: absolute;
+  right: 10%;
+  bottom: 10%;
+  width: 5rem;
+}
+.main-section .card-container .supervisor {
+  border-top: 3px solid hsl(180, 62%, 55%);
+}
+.main-section .card-container .double-card {
+  justify-content: space-between !important;
+}
+.main-section .card-container .double-card .team-builder {
+  border-top: 3px solid hsl(0, 78%, 62%);
+  margin-bottom: 3.5rem;
+}
+.main-section .card-container .double-card .karma {
+  border-top: 3px solid hsl(34, 97%, 64%);
+}
+.main-section .card-container .calculator {
+  border-top: 3px solid hsl(212, 86%, 64%);
+}
+
+@media all and (max-width: 376px) {
+  .main-section {
+    width: 95%;
+    padding: 3rem 0rem;
+  }
+  .main-section .description-container h2 {
+    font-size: 2rem;
+  }
+  .main-section .description-container h2 strong {
+    font-size: 2rem;
+  }
+  .main-section .card-container .cards {
+    width: 31rem;
+  }
+  .main-section .card-container .supervisor {
+    margin-bottom: 3.5rem;
+  }
+  .main-section .card-container .double-card {
+    margin-bottom: 3.5rem;
+  }
+}/*# sourceMappingURL=Style.css.map */
